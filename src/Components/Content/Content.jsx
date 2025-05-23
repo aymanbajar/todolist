@@ -132,7 +132,7 @@ export default function Content() {
       {successDelete && (
         <div
           style={{
-            position: "fixed",git 
+            position: "fixed",
             bottom: "20px",
             left: "20px",
             backgroundColor: "#d4edda",

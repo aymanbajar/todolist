@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { FaCheckCircle, FaTrash } from "react-icons/fa";
+import { FaCheckCircle, FaTrash, FaEdit } from "react-icons/fa";
 
 import "./Task.css";
 import Task from "./Task";
+import AddTask from "./AddTask";
 
 let nextId = 6;
 
@@ -10,6 +11,7 @@ export default function Content() {
   const [addingTask, setAddingTask] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [successDelete, setSuccessDelete] = useState("");
+
   const [tasks, setTasks] = useState([
     { id: 1, name: "قراءة كتاب", description: "كل يوم", isCompleted: false },
     {
@@ -38,6 +40,7 @@ export default function Content() {
     },
   ]);
 
+
   const handleCompleted = (id) => {
     setTasks((prevTasks) =>
       prevTasks.map((task) =>
@@ -46,8 +49,9 @@ export default function Content() {
     );
   };
 
+
   const handleDelete = (id) => {
-    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+    setTasks((prev) => prev.filter((t) => t.id !== id));
     setSuccessDelete("❌ تم الحذف بنجاح");
     setTimeout(() => setSuccessDelete(""), 3000);
   };
@@ -55,8 +59,8 @@ export default function Content() {
   const handleAddTask = () => {
     if (!addingTask.trim()) return;
 
-    setTasks((prevTasks) => [
-      ...prevTasks,
+    setTasks([
+      ...tasks,
       { id: nextId++, name: addingTask, description: "", isCompleted: false },
     ]);
     setSuccessMessage("✅ تم إضافة المهمة بنجاح");

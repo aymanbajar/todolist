@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaCheckCircle, FaTrash, FaEdit } from "react-icons/fa";
 
-import "./Content.css";
+
 import "./Task.css";
 import Task from "./Task";
 import AddTask from "./AddTask";

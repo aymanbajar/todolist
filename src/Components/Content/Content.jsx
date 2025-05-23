@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle, FaTrash, FaEdit } from "react-icons/fa";
 
-
 import "./Task.css";
 import Task from "./Task";
 import AddTask from "./AddTask";
@@ -85,7 +84,6 @@ export default function Content() {
       {successMessage && renderMessage(successMessage)}
       {successDelete && renderMessage(successDelete)}
 
-
       <ul style={{ padding: 0 }}>
         {tasks.map((task) => (
           <li
@@ -107,9 +105,7 @@ export default function Content() {
               >
                 <FaTrash />
               </button>
-              <button id="edit">
-                <FaEdit />
-              </button>
+
               <button
                 style={{
                   backgroundColor: task.isCompleted ? "green" : "#242424",

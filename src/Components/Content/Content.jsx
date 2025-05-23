@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { FaCheckCircle, FaTrash, FaEdit } from "react-icons/fa";
+import { FaCheckCircle, FaTrash } from "react-icons/fa";
 
 import "./Task.css";
 import Task from "./Task";
-import AddTask from "./AddTask";
 
 let nextId = 6;
 
@@ -40,11 +39,15 @@ export default function Content() {
   ]);
 
   const handleCompleted = (id) => {
-    setTasks((prev) => prev.filter((t) => t.id !== id));
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === id ? { ...task, isCompleted: !task.isCompleted } : task
+      )
+    );
   };
 
   const handleDelete = (id) => {
-    setTasks((prev) => prev.filter((t) => t.id !== id));
+    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
     setSuccessDelete("❌ تم الحذف بنجاح");
     setTimeout(() => setSuccessDelete(""), 3000);
   };
@@ -52,8 +55,8 @@ export default function Content() {
   const handleAddTask = () => {
     if (!addingTask.trim()) return;
 
-    setTasks([
-      ...tasks,
+    setTasks((prevTasks) => [
+      ...prevTasks,
       { id: nextId++, name: addingTask, description: "", isCompleted: false },
     ]);
     setSuccessMessage("✅ تم إضافة المهمة بنجاح");

@@ -1,0 +1,48 @@
+
+.add{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+input {
+    width: 80%;
+    direction: rtl;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border: 5px solid white;
+    border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    font-family: 'Cairo', sans-serif;
+
+}
+input::placeholder {
+    font-size: 24px;
+  }
+  
+  /* دعم لمتصفحات WebKit (مثل Chrome و Safari) */
+  input::-webkit-input-placeholder {
+    font-size: 24px;
+  }
+  
+  /* دعم لمتصفح Firefox */
+  input::-moz-placeholder {
+    font-size: 24px;
+  }
+  
+  /* دعم لمتصفح Internet Explorer 10-11 */
+  input:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  
+  /* دعم لـ Microsoft Edge القديم */
+  input::-ms-input-placeholder {
+    font-size: 24px;
+  }
+  
+.addButton{
+    width: 10%;
+    height: 50px;
+    margin: 1px 0 0 0;
+}

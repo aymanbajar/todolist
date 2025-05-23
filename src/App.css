@@ -1,0 +1,11 @@
+#root{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    background-color: rgb(237, 212, 180);
+    border-radius: 25px;
+}
+body{
+    background-color: white;
+}

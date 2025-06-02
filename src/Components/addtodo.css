@@ -1,0 +1,27 @@
+.addtodo{
+    display: flex;
+    flex-direction: row;}
+input{
+    width: 80%;
+    background-color: white;
+    font-size: 25px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid  black;
+    padding: 0 5px ;
+    margin:  0 10px 5px;
+    color: black;
+}
+ .add {
+    width: 20%;
+    height: 50px;
+    padding: 5px;
+    margin: 0 0 5px 5px  !important ;
+    background-color: rgb(228, 169, 19);
+    font-size: 25px;
+    border: none;
+}
+.add:hover{
+    background-color: black;
+    color: rgb(228, 169, 19);
+}

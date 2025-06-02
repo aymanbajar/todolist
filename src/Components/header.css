@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 25px 0;
+    font-family: Alexandria, sans-serif;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #1d1d1d;
+    font-family: Alexandria !important;
+
+  }
+  
+  .underline {
+    height: 4px;
+    background-color: orange; /* اللون الذي تريده */
+    border: none;
+    margin: 8px auto 0;   /* يجعل الخط تحت الكلمة بالمنتصف */
+    border-radius: 10px;  /* يجعل الخط ناعماً */
+  }
+  

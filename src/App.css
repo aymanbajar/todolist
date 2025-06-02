@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  direction: rtl;
+  background-color: rgb(223, 218, 218);
+}
+
+@font-face {
+  font-family: Alexandria;
+  src: url('../public/Fonts/Alexandria-ExtraLight.ttf');
+  font-weight: 900;
+}

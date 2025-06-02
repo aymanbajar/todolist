@@ -1,0 +1,30 @@
+    .todolist{
+        font-family: Alexandria;
+        font-size: 25px;
+        width: 600px;
+        margin: 0 auto;
+        color: black;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+  
+ div .btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .btns button{
+    width:100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+ }
+ .btns button:hover{
+    color:black;
+    background-color: white;
+ }
+    

@@ -1,0 +1,112 @@
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    font-family: Alexandria;
+
+    justify-content: space-around;
+    background-color: rgb(27, 21, 109);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin:15px  10px;
+    align-items: center;
+    height: 100px;
+   
+
+}
+h2 {
+  width: 60%;
+  margin: 0 5px;
+  padding: 0 10px;
+  direction: rtl;          /* ✔ يجعل النص من اليمين */
+  text-align: right;       /* ✔ يضمن محاذاة النص إلى اليمين */
+}
+
+.buttons{
+    margin: 5px 0 0;
+    width: 40%;
+  
+
+}
+
+button{
+    margin: 10px 10px 15px ;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+ svg {
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    margin: 5px 0 0;
+  }
+  .check{
+    color: green;
+  }
+  .edit{
+    color: rgb(227, 101, 27);
+  }
+  .trash{
+    color: red;
+  }
+  button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 7px 7px rgb(0, 0, 0,0.4);
+  }
+  
+  .todo:hover{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.2ms;
+    box-shadow: 0 7px 7px rgb(0, 0, 0,0.4);
+    
+
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(116, 106, 106, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal, .modal-edit {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .modal-buttons button {
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  .modal-edit input{
+    width: 100%;
+    outline: none;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px;
+  }

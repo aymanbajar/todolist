@@ -15,7 +15,7 @@ function App() {
   return (
     <div
       dir="rtl"
-      className="mx-auto my-50   w-[50%]  bg-gray-300 rounded-xl p-4 shadow-lg shadow-gray-400"
+      className="mx-auto my-50 md:w-[50%]  bg-gray-300 rounded-xl p-4 shadow-lg shadow-gray-400 "
     >
       <Header/>
       <hr />

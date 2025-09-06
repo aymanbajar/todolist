@@ -29,7 +29,7 @@ export default function AddForm() {
           <input
             value={newTaskName}
             onChange={(e) => setNewTaskName(e.target.value)}
-            className="w-[70%] text-black bg-amber-500 rounded outline-none border-2 border-black h-14 p-2"
+            className="w-[70%] text-black bg-amber-500 rounded outline-none border-2 border-black h-14 p-2 placeholder:text-sm md:placeholder:text-xl"
             type="text"
             placeholder="قم بإضافة مهمة جديدة"
           />

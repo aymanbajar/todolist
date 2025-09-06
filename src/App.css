@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Alexandria';
+  
+  src: url('/public/Fonts/Alexandria-SemiBold.ttf') ;
+}
+
+body{
+  font-family: 'Alexandria', sans-serif;
+}
